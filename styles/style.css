@@ -1,0 +1,178 @@
+:root{
+    --txt: #D1CCDC;
+    --titles: #F9E784;
+    --bg-color: #0B0014;
+    --bg-color2: #59656F;
+    --bg-color3: #1D1E2C;
+    --buttons: #A9BCD0;
+    --buttons2: #68C3D4;
+}
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+html{
+    font-size: 62.5%;
+    scrollbar-gutter: stable both-edges;
+}
+body{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--txt);
+    background-color: var(--bg-color);
+}
+.main{
+    background-color: var(--bg-color3);
+    border-radius: 0rem 0rem 5rem 5rem;
+}
+.section{
+    padding: 2rem 10rem;
+}
+.page-header{
+    background-color: var(--bg-color3);
+    border-radius: 5rem 5rem 0rem 0rem;
+    margin-bottom: 2rem;
+}
+.profile{
+    width: 30rem;
+    border-radius: 50rem;
+    border: solid 0.5rem var(--bg-color2);
+}
+.title, .presentation{
+    color: var(--titles);
+}
+.title{
+    text-transform: uppercase;
+}
+.presentation{
+    font-size: 6rem;
+}
+.welcome-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 0rem 0rem 2rem;
+}
+.info{
+    width: 90%;
+    font-weight: 550;
+}
+.proyectos-link, .lenguajes-link{
+    text-decoration: none;
+    color: var(--titles);
+}
+.proyectos-link:hover, .lenguajes-link:hover{
+    transition-duration: 100ms;
+    transition-delay: 200ms;
+    background-color: var(--bg-color);
+    border-radius: 5rem;
+}
+.sobre-mi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.language{
+    width: max-content;
+    padding: 0.3rem;
+    position: relative;
+    top: 2rem;
+    left: 3rem;
+    background-color: var(--buttons);
+    border: none;
+    border-radius: 2rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+.proyectos-info{
+    padding: 2rem;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.proyectos-info img{
+    width:30rem;
+    transition-duration: 150ms;
+    border: var(--titles) solid 1rem;
+}
+.proyectos-info img:hover{
+    transition-duration: 200ms;
+    border-radius: 3rem;
+}
+.open-close{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--titles);
+    margin: 0rem 1rem;
+    font-weight: 900;
+    font-size: 3rem;
+}
+.div1{
+    display: flex;
+    align-items: center;
+}
+.lenguajes-info{
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.lenguajes-info img{
+    width: 5.5rem;
+    margin: 1rem;
+}
+.div2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*-----------------------------------------------*/
+.html, .css, .javascript, .python, .sql{
+    font-size: 2.5rem;
+    font-weight: 900;
+    
+}
+.html{
+    color: orangered;
+}
+.css{
+    color: steelblue;
+}
+.javascript{
+    color: yellow;
+}
+.python{
+    color: steelblue;
+}
+.hon{
+    color: yellow;
+}
+.sql{
+    color: gray;
+}
+/*BORDES A LOS CONTAINERS PORFAVOR*/
+/*-----------------------------------------------*/
+*::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+*::-webkit-scrollbar:vertical {
+    width:1.5rem;
+}
+*::-webkit-scrollbar:horizontal {
+    height: 1rem;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: var(--bg-color2);
+    border-radius: 3rem;
+    border: 0.2rem solid #1760a800;
+}
+.general{
+    border: solid 1rem;
+    border-radius: 6rem;
+    margin: 3rem 6rem;
+}
