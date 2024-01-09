@@ -25,29 +25,18 @@ body{
 
 .main{
     background-color: var(--bg-color3);
-    border-radius: 0rem 0rem 5rem 5rem;
-}
-.section{
-    padding: 2rem 10rem;
 }
 .page-header{
     background-color: var(--bg-color3);
-    border-radius: 5rem 5rem 0rem 0rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 }
 .profile{
     width: 30rem;
     border-radius: 50rem;
     border: solid 0.5rem var(--bg-color2);
 }
-.title, .presentation{
-    color: var(--titles);
-}
-.title{
-    text-transform: uppercase;
-}
-.presentation{
-    font-size: 6rem;
+.general{
+    padding: 1rem 0.5rem;
 }
 .welcome-container{
     display: flex;
@@ -55,38 +44,7 @@ body{
     justify-content: space-evenly;
     flex-grow: 1;
     flex-wrap: wrap;
-    padding: 0rem 0rem 2rem;
-}
-.info{
-    width: 90%;
-    font-weight: 550;
-}
-.proyectos-link, .lenguajes-link{
-    text-decoration: none;
-    color: var(--titles);
-}
-.proyectos-link:hover, .lenguajes-link:hover{
-    transition-duration: 100ms;
-    transition-delay: 200ms;
-    background-color: var(--bg-color);
-    border-radius: 5rem;
-}
-.sobre-mi{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.language{
-    width: max-content;
-    padding: 0.3rem;
-    position: relative;
-    top: 2rem;
-    left: 3rem;
-    background-color: var(--buttons);
-    border: none;
-    border-radius: 2rem;
-    font-weight: 900;
-    cursor: pointer;
+    padding: 1rem 2rem;
 }
 .proyectos-info{
     padding: 2rem;
@@ -100,9 +58,36 @@ body{
     transition-duration: 150ms;
     border: var(--titles) solid 1rem;
 }
-.proyectos-info img:hover{
-    transition-duration: 200ms;
-    border-radius: 3rem;
+.title, .presentation{
+    color: var(--titles);
+}
+.title{
+    text-transform: uppercase;
+}
+.presentation{
+    font-size: 6rem;
+}
+.proyectos-link, .lenguajes-link{
+    text-decoration: none;
+    color: var(--titles);
+}
+.info{
+    width: 90%;
+    font-size: 2rem;
+    font-weight: 550;
+    padding: 1rem;
+}
+.language{
+    width: max-content;
+    padding: 0.3rem;
+    position: relative;
+    top: 1rem;
+    left: 1.5rem;
+    background-color: var(--buttons);
+    border: none;
+    border-radius: 2rem;
+    font-weight: 900;
+    cursor: pointer;
 }
 .open-close{
     background-color: transparent;
@@ -113,24 +98,6 @@ body{
     margin: 0rem 1rem;
     font-weight: 900;
     font-size: 3rem;
-}
-.div1{
-    display: flex;
-    align-items: center;
-}
-.lenguajes-info{
-    display: none;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.lenguajes-info img{
-    width: 5.5rem;
-    margin: 1rem;
-}
-.div2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 /*-----------------------------------------------*/
 .html, .css, .javascript, .python, .sql{
@@ -172,13 +139,35 @@ body{
     border-radius: 3rem;
     border: 0.2rem solid #1760a800;
 }
-.general{
-    border: solid 1rem;
-    border-radius: 6rem;
-    margin: 3rem 6rem;
+.open-close{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--titles);
+    margin: 0rem 1rem;
+    font-weight: 900;
+    font-size: 3rem;
 }
-@media screen and (max-width:320px) {
-    .general{
-        margin: 1rem;
-    }
+.div1{
+    display: flex;
+    align-items: center;
+}
+.lenguajes-info{
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.lenguajes-info img{
+    width: 5.5rem;
+    margin: 1rem;
+}
+.lenguajes-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (min-width:425px) {
+    
 }
