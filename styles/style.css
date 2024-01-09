@@ -31,7 +31,7 @@ body{
     margin-bottom: 0.5rem;
 }
 .profile{
-    width: 40rem;
+    width: 35rem;
     border-radius: 50rem;
     border: solid 0.5rem var(--bg-color2);
 }
@@ -41,8 +41,7 @@ body{
 .welcome-container{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    flex-grow: 1;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 1rem 2rem;
 }
@@ -63,9 +62,10 @@ body{
 }
 .title{
     text-transform: uppercase;
+    font-size: 4rem;
 }
 .presentation{
-    font-size: 6rem;
+    font-size: 8rem;
 }
 .proyectos-link, .lenguajes-link{
     text-decoration: none;
@@ -97,7 +97,9 @@ body{
     color: var(--titles);
     margin: 0rem 1rem;
     font-weight: 900;
-    font-size: 3rem;
+}
+#open-lenguajes, #open-proyectos{
+    font-size: 5rem;
 }
 /*-----------------------------------------------*/
 .html, .css, .javascript, .python, .sql{
