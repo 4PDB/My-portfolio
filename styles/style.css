@@ -20,15 +20,27 @@ html{
 
 @media screen and (max-width:500px) {
     body{
-        font-size: 1.6rem;
+        font-size: 3rem;
         background-image: url(../img/bg1-min.jpg);
         background-attachment:scroll;
         font-family: var(--info-font);
+        color: var(--principal-text);
     }
     /*---MAIN---*/
     .main-page{
         margin: 1rem;
         position: relative;
+    }
+    .language-icon{
+        width: 8rem;
+        height: 8rem;
+    }
+    .language{
+        background-color: transparent;
+        outline: none;
+        border: none;
+        position: absolute;
+        top: 55rem;
     }
     /*----------*/
 /*******************************************************/
@@ -64,33 +76,61 @@ html{
     /*-------------*/
 /*******************************************************/
     /*---NAV---*/
-    .page-nav{
+    /*.page-nav{
         position: fixed;
-        inset: 50% 0%;
+        inset: 90% 0%;
         width: fit-content;
     }
     .links{
         display: flex;
-        flex-direction: column;
-    }
+        flex-direction: row;
+    }*/
     /*---------*/
 /*******************************************************/
     /*---INFO---*/
     .section{
         background-color: var(--background);
-        height: 10rem;
+        height: fit-content;
+        width:;
+        margin: 2rem 0rem;
     }
     /*----------*/
 /*******************************************************/
     /*---ABOUT-ME---*/
     .about-me{
-    
+        padding: 1.5rem;
+    }
+    .title{
+        font-family: var(--title-font);
+        color: var(--title);
+    }
+    .information{
+        margin-bottom: 3rem;
+    }
+    .information2{
+
+    }
+    .projects-link, .abilities-link{
+        text-decoration: none;
+        color: var(--details);
     }
     /*--------------*/
 /*******************************************************/
     /*---PROJECTS---*/
-    .projects{
-
+    .projects-grid{
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+    }
+    .project-image{
+        width: 40rem;
+    }
+    .projects-grid a{
+        color: var(--secondary-text);
+        text-decoration: none;
+        background-color: var(--second-background);
+        padding: 1rem;
+        border-radius: 1rem;
     }
     /*--------------*/
 /*******************************************************/
