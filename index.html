@@ -4,106 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tektur&display=swap">
     <title>Alther Dallar</title>
   </head>
 
   <body>
-    <section class="general">
-      <header class="page-header">
-      
-        <input type="button" value="Change to English" id="language" class="language" onclick="language()">
-      
-        <section class="sobre-mi section" id="sobre-mi">
-          <div class="welcome-container">
-          <h1 class="presentation" id="presentation">Hola, soy Alther</h1>
-          
-          <img src="img/275332557_1369536746830510_1682603051568083110_n.jpeg" alt="Foto de Alther" class="profile">
-          </div>
-        
-          <p class="info" id="info">
-            ¡Hola! Me llamo Alther y soy un Desarrollador Frontend Junior apasionado por crear experiencias web atractivas y fáciles de usar. Tengo experiencia práctica en HTML, CSS y JavaScript, y he completado con éxito varios <a href='#proyectos' onclick="openProyectos()" class='proyectos-link'>proyectos</a> que demuestran mis habilidades. Además, cuento con conocimientos en otros <a onclick="openLenguajes()" href='#lenguajes' class='lenguajes-link'>lenguajes de programación</a>, lo que me permite diseñar sitios web dinámicos y receptivos. Estoy entusiasmado por colaborar, aportar mis habilidades y entusiasmo en proyectos colaborativos, y seguir progresando en el dinámico ámbito del desarrollo web.
-          </p>
-        </section>
-      </header>
-    
-      <main class="main">
-      
-        <section class="proyectos section" id="proyectos">
-        
-          <div class="div1">
-          
-            <input class="open-close" id="open-proyectos" onclick="openProyectos()" value="+" type="button"></input>
-          
-            <h1 class="title" id="proyectos-title">proyectos</h1>
-          
-          </div>
-        
-          <section class="proyectos-info info" id="proyectos-info">
-          
-            <a href="https://ch3ins.github.io/Coffee-Shop" target="_blank">
-            
-              <img src="img/brave_screenshot_ch3ins.github.io.png" class="coffee" alt="">
-            
-            </a>
-          </section>
-        </section>
-      
-        <section class="lenguajes section" id="lenguajes">
-        
-          <div class="div1">
-              
-            <input type="button" value="+" class="open-close" id="open-lenguajes" onclick="openLenguajes()">
-        
-            <h1 class="title" id="lenguajes-title">lenguajes</h1>
-          
-          </div>
-        
-          <section class="lenguajes-info" id="lenguajes-info">
-          
-            <div class="lenguajes-container html">
-            
-            <img src="img/icons8-html-5-48.png" alt="html">
-            
-            <h1 class="html">HTML</h1>
-            
-            </div>
-          
-            <div class="lenguajes-container css">
-            
-              <img src="img/icons8-css3-48.png" alt="css3">
-            
-              <h1 class="css">CSS</h1>
-            
-            </div>
-          
-            <div class="lenguajes-container javascript">
-            
-              <img src="img/icons8-javascript-48.png" alt="JavaScript">
-            
-              <h1 class="javascript">JavaScript</h1>
-            
-            </div>
-          
-            <div class="lenguajes-container python">
-            
-              <img src="img/icons8-python-48.png" alt="python">
-            
-              <h1 class="python">Pyt<b class="hon">hon</b></h1>
-            
-            </div>
-          
-            <div class="lenguajes-container sql">
-            
-              <img src="img/icons8-sql-48.png" alt="sql">
-            
-              <h1 class="sql">SQL</h1>
-            
-            </div>
-          </section>
-        </section>
-      </main>
-    </section>
 
+    <main class="main-page" id="main-page">
+      
+      <header class="page-header" id="page-header">
+
+        <article class="header-titles" id="header-titles">
+          <h1 class="principal-title" id="principal-title">Hola, soy Alther</h1>
+          <h2 class="principal-subTitle" id="principal-subTitle">Desarrollador Front-end junior</h2>
+        </article>
+        <img class="photo" src="img/photo1.jpg" alt="Foto de alther">
+
+      </header>
+
+      <nav class="page-nav" id="page-nav">
+        <button type="button">CHECK</button>
+        <section class="links" id="links">
+          <a href="#about-me">000</a>
+          <a href="#projects">111</a>
+          <a href="#abilities">222</a>
+          <a href="#contact">333</a>
+        </section>
+      </nav>
+
+      <section class="about-me section" id="about-me"></section>
+
+      <section class="projects section" id="projects"></section>
+
+      <section class="abilities section" id="abilities"></section>
+
+      <section class="contact section" id="contact"></section>
+
+      <footer class="page-footer section" id="page-footer"></footer>
+
+    </main>
 
     <script src="js/script.js"></script>
   </body>
