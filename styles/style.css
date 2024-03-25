@@ -1,12 +1,11 @@
 :root{
-    --secondary-text: #007BFF;
-    --principal-text: #F8F8F8;
-    --background: #000000c0;
-    --title: #FFA500;
-    --details: #FFD700;
-    --second-background: #7C7C7Cc0;
-    --title-font: 'Pixelify Sans', sans-serif;
-    --info-font: 'Tektur', sans-serif;
+    --color-1: #282828;
+    --color-2: #898980;
+    --color-3: #edffec;
+    --color-4: #dd1c1a;
+    --shadows: rgba(0, 0, 0, 0.5);
+    --title-font: 'Permanent Marker', sans-serif;
+    --info-font: 'Luckiest Guy', sans-serif;
 }
 *{
     box-sizing: border-box;
@@ -17,144 +16,45 @@ html{
     font-size: 62.5%;
     scrollbar-gutter: stable both-edges;
 }
-
-@media screen and (max-width:500px) {
-    body{
-        font-size: 3rem;
-        background-image: url(../img/bg1-min.jpg);
-        background-attachment:scroll;
-        font-family: var(--info-font);
-        color: var(--principal-text);
-    }
-    /*---MAIN---*/
-    .main-page{
-        margin: 1rem;
-        position: relative;
-    }
-    .language-icon{
-        width: 8rem;
-        height: 8rem;
-    }
-    .language{
-        background-color: transparent;
-        outline: none;
-        border: none;
-        position: absolute;
-        top: 55rem;
-    }
-    /*----------*/
-/*******************************************************/
-    /*----HEADER---*/
-    .header-titles{
-        text-align: center;
-    }
-    .page-header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .principal-title{
-        color:var(--title);
-        font-size: 5rem;
-        text-transform: uppercase;
-    }
-    .principal-subTitle{
-        color: var(--secondary-text);
-        font-size: 3rem;
-        font-weight: 800;
-    }
-    .principal-title, .principal-subTitle{
-        font-family: var(--title-font);
-    }
-    .photo{
-        width: 40rem;
-        border-top-right-radius: 20rem;
-        border-bottom-left-radius: 20rem;
-        background-color: var(--second-background);
-        padding: 1rem;
-    }
-    /*-------------*/
-/*******************************************************/
-    /*---NAV---*/
-    /*.page-nav{
-        position: fixed;
-        inset: 90% 0%;
-        width: fit-content;
-    }
-    .links{
-        display: flex;
-        flex-direction: row;
-    }*/
-    /*---------*/
-/*******************************************************/
-    /*---INFO---*/
-    .section{
-        background-color: var(--background);
-        height: fit-content;
-        width:;
-        margin: 2rem 0rem;
-    }
-    /*----------*/
-/*******************************************************/
-    /*---ABOUT-ME---*/
-    .about-me{
-        padding: 1.5rem;
-    }
-    .title{
-        font-family: var(--title-font);
-        color: var(--title);
-    }
-    .information{
-        margin-bottom: 3rem;
-    }
-    .information2{
-
-    }
-    .projects-link, .abilities-link{
-        text-decoration: none;
-        color: var(--details);
-    }
-    /*--------------*/
-/*******************************************************/
-    /*---PROJECTS---*/
-    .projects-grid{
-        display: flex;
-        justify-content: center;
-        padding: 2rem;
-    }
-    .project-image{
-        width: 40rem;
-    }
-    .projects-grid a{
-        color: var(--secondary-text);
-        text-decoration: none;
-        background-color: var(--second-background);
-        padding: 1rem;
-        border-radius: 1rem;
-    }
-    /*--------------*/
-/*******************************************************/
-    /*---ABILITIES---*/
-    .abilities{
-
-    }
-    /*---------------*/
-/*******************************************************/
-    /*---CONTACT---*/
-    .contact{
-
-    }
-    /*-------------*/
-/*******************************************************/
-    /*---FOOTER---*/
-    .page-footer{
-
-    }
-    /*------------*/
+body {
+    font-size: 1.6rem;
+    font-family: var(--info-font);
+    color: var(--color-3);
 }
-@media screen and (min-width:501px) and (max-width:959px) {
-    
+
+.pageHeader {
+    background-color: var(--color-1);
+    padding: 1rem 5%;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
-@media screen and (min-width:960px) {
-    
+.iam{
+    font-family: var(--title-font);
+    color: var(--color-4);
+    font-size: 5rem;
+    text-shadow: 0.7rem 0.5rem 0.3rem var(--shadows);
+}
+
+.profile {
+    width: 30rem; 
+    height: 35rem; 
+    object-fit: cover;
+    object-position: 25% 25%;
+    border-top-right-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+    box-shadow: 2rem 2rem 2rem 0.1rem var(--shadows);
+    margin: 1rem;
+}
+
+.information {
+    max-width: 40rem;
+    text-align: left;
+}
+
+.aboutMe {
+    margin: 1rem;
 }
