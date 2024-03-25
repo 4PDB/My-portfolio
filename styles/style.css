@@ -1,20 +1,24 @@
 :root{
-    --color-1: #282828;
-    --color-2: #898980;
+    --color-1: #141414;
+    --color-2: #3d3d39;
     --color-3: #edffec;
     --color-4: #dd1c1a;
     --shadows: rgba(0, 0, 0, 0.5);
+    --shadows2: rgba(150, 0, 0, 1);
+    --shadows3: rgba(220, 200, 0, 1);
     --title-font: 'Permanent Marker', sans-serif;
     --info-font: 'Luckiest Guy', sans-serif;
 }
 *{
     box-sizing: border-box;
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
 }
 html{
     font-size: 62.5%;
     scrollbar-gutter: stable both-edges;
+    background-image: url(/img/Blue\ Wallpaper\ Phone.jpeg);
+    background-attachment: fixed;
 }
 body {
     font-size: 1.6rem;
@@ -29,7 +33,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 .iam{
@@ -37,6 +41,7 @@ body {
     color: var(--color-4);
     font-size: 5rem;
     text-shadow: 0.7rem 0.5rem 0.3rem var(--shadows);
+    text-align: center;
 }
 
 .profile {
@@ -47,14 +52,65 @@ body {
     border-top-right-radius: 10rem;
     border-bottom-left-radius: 10rem;
     box-shadow: 2rem 2rem 2rem 0.1rem var(--shadows);
-    margin: 1rem;
+    margin: 0 5rem;
 }
 
 .information {
-    max-width: 40rem;
-    text-align: left;
+    max-width: 47rem;
 }
 
 .aboutMe {
     margin: 1rem;
+}
+
+.title {
+    color: var(--color-4);
+    font-size: 5rem;
+    text-shadow: 0.7rem 0.5rem 2rem var(--shadows2);
+}
+.subTitle {
+    font-size: 2rem;
+}
+.projectTitle, .subTitle {
+    color: var(--color-3);
+    text-shadow: 0.1rem 0.1rem 1rem var(--shadows3);
+}
+
+.projects {
+    background-color: var(--color-2);
+    margin: 0 10%;
+    padding: 1%;
+}
+
+.projectsGrid {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.projectPreview {
+    width: 25rem;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.projectDescription {
+    margin: 1rem;
+    max-width: 40rem;
+}
+
+.box {
+    box-shadow: 2rem 2rem 2rem 0.1rem var(--shadows);
+    background-color: var(--color-1);
+    border-radius: 3rem;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: space-between;
+    width: auto;
+    align-items: center;
 }
