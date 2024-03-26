@@ -110,6 +110,6 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-items: space-between;
-    width: auto;
+    width: 28rem;
     align-items: center;
 }
