@@ -16,6 +16,8 @@
 }
 html{
     font-size: 62.5%;
+    background-image: url("../img/Blue-Wallpaper-Phone.jpeg");
+    background-attachment: fixed;
 }
 body {
     font-size: 1.6rem;
@@ -75,6 +77,7 @@ body {
 
 .projects {
     background-color: var(--color-2);
+    margin: 0 5%;
     padding: 1%;
 }
 
