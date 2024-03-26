@@ -16,17 +16,11 @@
 }
 html{
     font-size: 62.5%;
-    scrollbar-gutter: stable both-edges;
 }
 body {
     font-size: 1.6rem;
     font-family: var(--info-font);
     color: var(--color-3);
-}
-
-.mainPage {
-    background-image: url("/img/bg1-min.jpg");
-    background-attachment: fixed;
 }
 
 .pageHeader {
@@ -81,7 +75,6 @@ body {
 
 .projects {
     background-color: var(--color-2);
-    margin: 0 10%;
     padding: 1%;
 }
 
