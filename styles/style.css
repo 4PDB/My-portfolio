@@ -41,6 +41,7 @@ body {
 .projectItem {
     background-color: var(--color-2);
     text-decoration: none;
+    border: var(--color-2) solid 0.5rem;
     color: var(--color-3);
 }
 
@@ -90,7 +91,7 @@ body {
         gap: 1rem;
     }
     .projectImage {
-        width: 25rem;
+        width: 85%;
         border-radius: 1rem;
     }
     .projectItem {
@@ -98,6 +99,16 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .tech {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    .projectName {
+        font-size: 2rem;
+        padding: 1rem;
     }
 
 }
@@ -142,6 +153,35 @@ body {
         margin-bottom: 10rem;
     }
 
+    .projectsGrid {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1rem;
+    }
+    .projectImage {
+        width: 85%;
+        border-radius: 1rem;
+    }
+    .projectItem {
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tech {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    .techIcon {
+        height: 6rem;
+    }
+    .projectName {
+        font-size: 3rem;
+        padding: 1rem;
+    }
+
 }
 
 
@@ -184,6 +224,35 @@ body {
         margin-bottom: 10rem;
     }
 
+    .projectsGrid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 1rem;
+    }
+    .projectImage {
+        width: 85%;
+        border-radius: 1rem;
+    }
+    .projectItem {
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tech {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    .techIcon {
+        height: 6rem;
+    }
+    .projectName {
+        font-size: 3rem;
+        padding: 1rem;
+    }
+
 }
 
 
@@ -194,7 +263,6 @@ body {
         max-width: 144rem;
         margin: 0.3rem auto;
     }
-    
     .pageHeader {
         min-height: 60rem;
         display: flex;
@@ -203,29 +271,58 @@ body {
         flex-wrap: wrap;
         padding: 1rem;
     }
-    
     .information {
         min-width: 40rem;
         font-size: 2.5rem;
     }
-    
     .title {
         font-size: 5rem;
     }
-    
     .iam {
         text-align: center;
         align-self: center;
         font-size: 12rem;
     }
-    
     .pageSection, .pageContent{
         margin: 0 5rem;
     }
-    
     .aboutMe, .projects {
         padding: 2rem;
         margin-bottom: 10rem;
+    }
+
+    .projectsGrid {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        gap: 1rem;
+    }
+    .projectImage {
+        width: 85%;
+        border-radius: 1rem;
+    }
+    .projectItem {
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 1ms 2ms;
+    }
+    .tech {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    .techIcon {
+        height: 6rem;
+    }
+    .projectName {
+        font-size: 3rem;
+        padding: 1rem;
+    }
+
+    .projectItem:hover {
+        background-color: #353535;
     }
 
 }
