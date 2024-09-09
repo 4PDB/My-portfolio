@@ -6,6 +6,11 @@
     --secBg-color: #2f2f2f;
     --info-font: 'Paytone One', sans-serif;
     --title-font: 'Moul', sans-serif;
+    --css3: #0277bd;
+    --html5: #e65100;
+    --js: #ffd600;
+    --python: #ffc107;
+    --sql: #7d61bd;
 }
 *{
     box-sizing: border-box;
@@ -43,6 +48,46 @@ body {
     text-decoration: none;
     border: var(--color-2) solid 0.5rem;
     color: var(--color-3);
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    height: 50rem;
+}
+
+.ability {
+    background-color: var(--color-2);
+    padding: 1rem;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: row;
+}
+.bar {
+    background-color: var(--secBg-color);
+    color: white;
+}
+.HTML5 {
+    background-color: var(--html5);
+    width: 80%;
+}
+.CSS3 {
+    background-color: var(--css3);
+    width: 70%;
+}
+.JS {
+    background-color: var(--js);
+    width: 45%;
+}
+.PYTHON {
+    background-color: var(--python);
+    width: 75%;
+}
+.SQL {
+    background-color: var(--sql);
+    width: 20%;
 }
 
 
@@ -109,6 +154,20 @@ body {
     .projectName {
         font-size: 2rem;
         padding: 1rem;
+    }
+    .bar {
+        width: 100%;
+        
+    }
+    .abilityInfo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .barColor, .bar {
+        height: 1.5rem;
+        border-radius: 5rem;
     }
 
 }
@@ -252,6 +311,20 @@ body {
         font-size: 3rem;
         padding: 1rem;
     }
+    .bar {
+        width: 100%;
+        
+    }
+    .abilityInfo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .barColor, .bar {
+        height: 1.5rem;
+        border-radius: 5rem;
+    }
 
 }
 
@@ -323,6 +396,20 @@ body {
 
     .projectItem:hover {
         background-color: #353535;
+    }
+    .bar {
+        width: 100%;
+        
+    }
+    .abilityInfo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .barColor, .bar {
+        height: 1.5rem;
+        border-radius: 5rem;
     }
 
 }
